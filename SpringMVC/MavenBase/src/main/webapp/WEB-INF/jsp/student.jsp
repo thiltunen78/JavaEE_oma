@@ -48,10 +48,10 @@
                         <tbody>
                             <c:forEach var="stud" items="${students}">
                                 <tr>
-                                    <td>${teach.getSName()}</td>
-                                    <td>${teach.getEmail()}</td>
-                                    <td>${teach.getPhone()}</td>
-                                    <td>${teach.getAddress()}</td>
+                                    <td>${stud.getSName()}</td>
+                                    <td>${stud.getEmail()}</td>
+                                    <td>${stud.getPhone()}</td>
+                                    <td>${stud.getAddress()}</td>
                                 </tr>
                             </c:forEach>
                         </tbody>

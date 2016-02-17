@@ -1,4 +1,5 @@
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\config\WebInitializer.java
+D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\DAO\CourseDAO.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\DAO\UserDAO.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\DAO\TeacherDAO.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\models\RelTable.java
@@ -14,4 +15,5 @@ D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\mai
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\models\Course.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\models\Teacher.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\service\MyUserDetailsService.java
+D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\controller\CourseController.java
 D:\Ohjelmistokehityksen ko\SpringProjects\JavaEE_oma\SpringMVC\MavenBase\src\main\java\com\base\models\UserRoles.java

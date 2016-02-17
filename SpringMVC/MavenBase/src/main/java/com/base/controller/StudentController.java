@@ -23,6 +23,19 @@ public class StudentController
     @RequestMapping(value="/admin/student", method=RequestMethod.GET)
     public String renderStudent(ModelMap map)
     {
+        map.addAttribute("isLogged",true);
+        map.addAttribute("student_active","active");
+        map.addAttribute("student",new Student());
+        
+        try
+        {
+            map.addAttribute("students",StudentDAO.getStudents());
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        
         return "student";
     }
     
@@ -30,6 +43,7 @@ public class StudentController
     public String addNewStudent(@ModelAttribute("student") Student stud, ModelMap map)
     {
         map.addAttribute("isLogged",true);
+        map.addAttribute("student_active","active");
         
         try
         {

@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class DefaultController {
+public class DefaultController {    
     
     @RequestMapping(value="/", method=RequestMethod.GET)
     public String index(ModelMap map)
-    {
+    {        
         map.addAttribute("isLogged",false);
         return "index";
     } 
@@ -28,6 +28,8 @@ public class DefaultController {
     public String second(ModelMap map)
     {        
         map.addAttribute("isLogged",true);
+        map.addAttribute("teacher_active","active");
+        
         map.addAttribute("teacher",new Teacher());
         
         try
@@ -45,7 +47,7 @@ public class DefaultController {
     
     @RequestMapping(value="/admin/teacher", method=RequestMethod.POST)
     public String addNewTeacher(@ModelAttribute("teacher") Teacher teach, ModelMap map)
-    {
+    { 
         map.addAttribute("isLogged",true);
         
         try
@@ -64,7 +66,7 @@ public class DefaultController {
     
     @RequestMapping(value="/logout",method=RequestMethod.GET)
     public String logout(HttpServletRequest request,HttpServletResponse resp)
-    {
+    {               
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         if(auth != null)
         {
@@ -84,5 +86,5 @@ public class DefaultController {
     public String accessDenied(ModelMap map)
     {              
         return "<h1><i>You don't have permission to this page</i></h1>";
-    }
+    }    
 }

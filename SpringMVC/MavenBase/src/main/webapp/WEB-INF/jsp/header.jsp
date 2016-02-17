@@ -14,9 +14,11 @@
         </div>
         <div class='collapse navbar-collapse navabar-ex-collapse'>
             <ul id='anc_list' class="nav navbar-nav navbar-right">
-                <c:if test="${isLogged == true}">
+                <c:if test="${isLogged == true}">                    
+                    <li class="${teacher_active}"><a href="/admin/second">Add teacher</a></li>
+                    <li class="${student_active}"><a href="/admin/student">Add student</a></li>
+                    <li class="${course_active}"><a href="/admin/course">Add course</a></li>
                     <li><a href="/logout">Logout</a></li>
-                    <li><a href="/admin/student">Add student</a></li>
                 </c:if>
             </ul>
         </div>
